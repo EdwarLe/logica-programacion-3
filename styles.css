@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(35, 27, 51);
+}
+
+main {
+    margin: auto;
+    max-width: 800px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+main h1 {
+    font-size: 30px;
+}
+
+.formFarctorial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputFactorial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 50px;
+    outline: none;
+    border: solid 1px yellowgreen;
+    background-color: transparent;
+}
+
+button {
+    background-color: yellowgreen;
+    border: solid transparent 1px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: transparent;
+    border: solid yellowgreen 1px;
+}
+
+.total {
+    align-self: flex-start;
+}
+
+.modalError {
+    position: absolute;
+    top: 30%;
+    right: -100%;
+    background-color: rgb(253, 161, 161);
+    color: red;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
