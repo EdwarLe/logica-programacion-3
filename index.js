@@ -11,6 +11,9 @@ formFactorial.addEventListener('submit', (e) => {
     if (isNaN(number)) {
         total.textContent = 0
         modalError.style.right = 0
+        setTimeout(() => {
+            modalError.style.right = '-100%'
+        }, 2000);
         return modalError.textContent = "Por favor ingresa un valor correcto"
     }
 
